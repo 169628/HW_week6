@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <!-- banner -->
+    <section>
+      <div class="container-lg p-0 px-lg-5">
+        <picture>
+          <source
+            srcset="../assets/images/about-banner-sm.png"
+            media="(max-width: 991px)"
+          />
+          <img
+            class="banner"
+            src="../assets/images/about-banner.png"
+            alt="banner"
+          />
+        </picture>
+      </div>
+    </section>
+    <!-- 首頁 / 關於我們 -->
+    <div class="container">
+      <ol class="breadcrumb badge-ol">
+        <li class="breadcrumb-item">
+          <a class="badge-home" href="#">首頁</a>
+        </li>
+        <li class="breadcrumb-item badge-about" aria-current="page">
+          關於我們
+        </li>
+      </ol>
+      <h4 class="fs-lg-1">關於我們</h4>
+    </div>
+    <!-- 卡片 -->
+
+    <div class="container-lg p-0 px-lg-5 py-12 py-lg-15 overflow-hidden">
+      <div class="d-lg-flex mb-8 mb-lg-13">
+        <picture>
+          <source
+            srcset="../assets/images/about-1-sm.png"
+            media="(max-width: 991px)"
+          />
+          <img
+            class="banner mb-8"
+            src="../assets/images/about-1.png"
+            alt="about 1"
+          />
+        </picture>
+        <div
+          class="about-card-container d-flex justify-content-center justify-content-lg-start"
+        >
+          <div class="px-lg-12 about-card">
+            <h4 class="fw-bold fs-lg-2 mb-5">Vivre</h4>
+            <p class="text-neutral-400">
+              vivre
+              這個品牌名稱源自法語,意為"生活"、"活著"。它象徵著我們對於高品質生活的熱愛與追求。vivre
+              旨在成為一個分享美好生活體驗、發掘生活質感的平台。
+            </p>
+            <p class="about-card-title">我們的品牌價值</p>
+            <ul class="text-neutral-400">
+              <li class="mb-3">熱愛生活,好奇心永存</li>
+              <li class="mb-3">品味獨具,講究生活質感</li>
+              <li class="mb-3">分享真實生活,啟發生活靈感</li>
+              <li>推廣慢生活哲學,注重內在修為</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-lg-flex flex-lg-row-reverse mb-8 mb-lg-13">
+        <picture>
+          <source
+            srcset="../assets/images/about-2-sm.png"
+            media="(max-width: 991px)"
+          />
+          <img
+            class="banner mb-8"
+            src="../assets/images/about-2.png"
+            alt="about 2"
+          />
+        </picture>
+        <div
+          class="about-card-container d-flex justify-content-center justify-content-lg-start"
+        >
+          <div class="px-lg-12 about-card">
+            <h4 class="fw-bold fs-lg-2 mb-6 mb-lg-10">風格特色</h4>
+            <p class="text-neutral-400 mb-6 mb-lg-10">
+              vivre
+              所展現的風格特色,可以用知性、親和、用心、優雅與獨特這些詞語來概括。我們講求內容的原創性與探索精神,不跟風追隨潮流話題,而是真誠分享獨特的生活視角與體驗。無論是旅行、美食、居家、時尚等生活領域,我們都希望能夠呈現出與眾不同、縝密入微、內外兼具的見解,給讀者帶來嶄新的感受和啟迪。
+            </p>
+            <p class="text-neutral-400">
+              無論您是對美食、旅行、居家生活還是時尚風尚有獨到的見解和體會,只要切合vivre的價值理念與風格調性,我們都熱烈歡迎您加入這個平台,與我們一起分享和交流生活的點點滴滴。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 大事記 -->
+
+    <section class="bg-primary-200">
+      <div
+        class="container d-lg-flex justify-content-lg-between py-12 py-lg-15"
+      >
+        <h4 class="fs-lg-2 mb-8">大事記</h4>
+        <div>
+          <div class="event-card d-lg-flex align-items-lg-start">
+            <span
+              class="badge text-neutral-100 bg-primary-400 fs-6 fs-lg-4 p-5 rounded-0 me-14 mb-8"
+              >2020</span
+            >
+            <div>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td style="color: #6c757d" class="event-month">5月</td>
+                    <td class="event-content">
+                      創辦人茱麗葉、亞歷山大和幾個好友在巴黎開設 vivre
+                      生活部落格,紀錄分享他們對美好生活的想法和體驗。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table mt-8">
+                <tbody>
+                  <tr>
+                    <td style="color: #6c757d" class="event-month">10月</td>
+                    <td class="event-content">
+                      部落格內容和讀者人數逐漸累積,決定成立 vivre
+                      品牌,開發更多元豐富的內容。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="event-card d-lg-flex align-items-lg-start mt-15">
+            <span
+              class="badge text-neutral-100 bg-primary-400 fs-6 fs-lg-4 p-5 rounded-0 me-14 mb-8"
+              >2021</span
+            >
+            <div>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td style="color: #6c757d" class="event-month">3月</td>
+                    <td class="event-content">
+                      vivre
+                      網站正式上線,除了原創文字內容,還加上了視訊、音訊等多媒體形式。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table mt-8">
+                <tbody>
+                  <tr>
+                    <td style="color: #6c757d" class="event-month">7月</td>
+                    <td class="event-content">
+                      與法國本土品牌合作,推出 vivre
+                      首個自有產品線,包括家飾、餐飲用品等生活品味商品。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table mt-8">
+                <tbody>
+                  <tr>
+                    <td style="color: #6c757d" class="event-month">12月</td>
+                    <td class="event-content">
+                      總瀏覽人次突破 100 萬大關,獲得實體出版社青睞,出版 vivre
+                      生活風格書籍。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="event-card d-lg-flex align-items-lg-start mt-15">
+            <span
+              class="badge text-neutral-100 bg-primary-400 fs-6 fs-lg-4 p-5 rounded-0 me-14 mb-8"
+              >2022</span
+            >
+            <div>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td style="color: #6c757d" class="event-month">3月</td>
+                    <td class="event-content">
+                      推出 vivre
+                      生活風格線上課程,聘請各領域專家開設有深度的付費課程。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table mt-8">
+                <tbody>
+                  <tr>
+                    <td style="color: #6c757d" class="event-month">8月</td>
+                    <td class="event-content">
+                      vivre 舉辦首屆 vivre
+                      生活節,線上線下同步展開,現場湧入大批品牌粉絲朋友。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table mt-8">
+                <tbody>
+                  <tr>
+                    <td style="color: #6c757d" class="event-month">10月</td>
+                    <td class="event-content">
+                      vivre 完成 A 輪融資,獲得知名風投資金青睞。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="event-card d-lg-flex align-items-lg-start mt-15">
+            <span
+              class="badge text-neutral-100 bg-primary-400 fs-6 fs-lg-4 p-5 rounded-0 me-14 mb-8"
+              >2023</span
+            >
+            <div>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td style="color: #6c757d" class="event-month">1月</td>
+                    <td class="event-content">
+                      vivre 宣布品牌願景"探索更美好的生活",並推出全新視覺形象。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table mt-8">
+                <tbody>
+                  <tr>
+                    <td style="color: #6c757d" class="event-month">5月</td>
+                    <td class="event-content">
+                      正式推出付費訂閱會員服務,提供高階獨家內容和會員優惠。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table mt-8">
+                <tbody>
+                  <tr>
+                    <td style="color: #6c757d" class="event-month">9月</td>
+                    <td class="event-content">
+                      首次評選年度" vivre
+                      生活風格大獎",表彰在各領域具有開創性的人物及品牌。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table mt-8">
+                <tbody>
+                  <tr>
+                    <td style="color: #6c757d" class="event-month">11月</td>
+                    <td class="event-content">
+                      首次登場的" vivre
+                      生活節沙龍"在全球主要城市同步舉行,線上線下吸引百萬人觀看。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 品牌願景 -->
+
+    <div
+      class="container py-12 py-lg-15 d-flex flex-column align-items-center mt-lg-8"
+    >
+      <h4 class="fs-lg-2 mb-8">品牌願景</h4>
+      <div class="vision-card">
+        <p class="text-neutral-400">
+          我們的目標不僅是為讀者提供高水準的內容，更希望能真正啟發和影響讀者的生活方式與價值觀,引領走向更有意義、品質與質感的生活體驗。我們相信,生活的意義不僅僅在於外在物質條件的滿足,更多的是一種心靈層面的追求,一種對美好事物的不懈向往。因此,vivre
+          的定位是成為啟迪現代人內在生活的引路人,給予靈感啟迪,引領讀者去體驗生活的真諦。
+        </p>
+        <p class="text-neutral-400 mt-8 mt-lg-10">
+          我們衷心期盼，vivre
+          能為現代人的生活帶來無限靈感啟發,讓每個人的生活之路不僅優雅、從容,更有內在的意義與價值,豐富而燦爛。讓我們共同努力,將生活過得更有滋有味!期待您一同加入
+          vivre，攜手同行這段美妙的人生旅程。
+        </p>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

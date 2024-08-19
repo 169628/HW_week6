@@ -1,0 +1,44 @@
+.offcanvas-container {
+  @include mobile {
+    max-width: 398px;
+    padding: 20px 12px;
+  }
+}
+
+// input
+.input-size {
+  width: 276px;
+  display: flex;
+  align-items: center;
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.input-group-lg .form-control {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50rem;
+  &:focus {
+    box-shadow: none;
+    outline: none;
+    border: $gray-300 1px solid;
+  }
+  @include mobile {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.input-group-lg .input-group-text {
+  border-radius: 50rem;
+  color: $accent-200;
+}
+
+// btn
+.nav-btn {
+  @include mobile {
+    width: 100%;
+  }
+}

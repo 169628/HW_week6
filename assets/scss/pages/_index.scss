@@ -1,0 +1,155 @@
+//banner
+
+.banner {
+  max-width: 100%;
+  @include mobile {
+    width: 100vw;
+    height: auto;
+  }
+}
+.banner-position {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  padding-left: 61px;
+  display: flex;
+  align-items: center;
+
+  @include mobile {
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 48px;
+  }
+}
+
+//熱門主題
+
+.theme-item {
+  border-radius: 20px 0 20px 0;
+  overflow: hidden;
+  max-width: 100%;
+  @include mobile {
+    width: 100%;
+  }
+  &:hover {
+    background-color: transparent;
+    opacity: 0.5;
+  }
+}
+
+//精選文章
+
+//卡片
+.article-card {
+  width: 404px;
+  @include mobile {
+    width: 324px;
+  }
+}
+.btn-outline-accent-200 {
+  &:hover {
+    color: $accent-300;
+    background-color: $primary-100;
+  }
+}
+
+//switcher
+.switcher-box {
+  width: 72px;
+  margin: 0 12px;
+  .switcher-line {
+    border-bottom: $gray-600 1px solid;
+  }
+}
+
+//訂閱
+
+.subscribe-title {
+  font-size: 24px;
+  line-height: 1.2;
+  color: $primary-400;
+  @include mobile {
+    color: $accent-200;
+    font-size: 16px;
+  }
+}
+.subscribe-item {
+  color: $gray-600;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.subscribe-bg2 {
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+}
+
+//hots
+
+//list group
+.hots-list-item {
+  width: 258px;
+  padding: 16px;
+  margin-bottom: 24px;
+  &:hover {
+    background-color: $accent-100;
+  }
+}
+
+//卡片
+.hots-card {
+  width: 967px;
+  padding: 64px;
+  @include mobile {
+    width: 324px;
+    border-radius: 12px;
+    padding: 16px;
+  }
+}
+//圖片
+.hots-img-left {
+  border-radius: 20px 0 0 20px;
+  overflow: hidden;
+  @include mobile {
+    border-radius: 0;
+  }
+}
+.hots-img-right {
+  border-radius: 0 20px 20px 0;
+  overflow: hidden;
+}
+
+//品味生活
+
+//卡片
+.life-card-title {
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: $primary-400;
+  margin-bottom: 36px;
+  @include mobile {
+    font-size: 40px;
+    margin-bottom: 24px;
+  }
+}
+.life-card-item {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: $gray-800;
+  margin-bottom: 20px;
+  @include mobile {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+//projects
+
+.projects-badge {
+  position: absolute;
+  top: -16px;
+  left: 16px;
+}
