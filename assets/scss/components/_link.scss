@@ -1,0 +1,34 @@
+.a-link {
+  color: $accent-200;
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 16px;
+  &:hover {
+    color: $accent-300;
+  }
+}
+
+.badge-link {
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  background-color: $primary-300;
+  border-radius: 4px;
+  color: $primary-400;
+  &:hover {
+    background-color: $primary-400;
+    color: #ffffff;
+  }
+}
+
+.badge-light {
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  background-color: #ffffff;
+  border: $accent-100 1px solid;
+  border-radius: 4px;
+  color: $accent-300;
+}

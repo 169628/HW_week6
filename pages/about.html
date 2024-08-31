@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -17,7 +25,7 @@
             media="(max-width: 991px)"
           />
           <img
-            class="banner"
+            class="img-fluid about-img-fluid"
             src="../assets/images/about-banner.png"
             alt="banner"
           />
@@ -34,27 +42,29 @@
           關於我們
         </li>
       </ol>
-      <h4 class="fs-lg-1">關於我們</h4>
+      <h1 class="title fs-4 fs-lg-1">關於我們</h1>
     </div>
     <!-- 卡片 -->
 
     <div class="container-lg p-0 px-lg-5 py-12 py-lg-15 overflow-hidden">
-      <div class="d-lg-flex mb-8 mb-lg-13">
-        <picture>
-          <source
-            srcset="../assets/images/about-1-sm.png"
-            media="(max-width: 991px)"
-          />
-          <img
-            class="banner mb-8"
-            src="../assets/images/about-1.png"
-            alt="about 1"
-          />
-        </picture>
-        <div
-          class="about-card-container d-flex justify-content-center justify-content-lg-start"
-        >
-          <div class="px-lg-12 about-card">
+      <div class="about-row d-flex flex-wrap pb-lg-8">
+        <div class="about-col">
+          <picture>
+            <source
+              srcset="../assets/images/about-1-sm.png"
+              media="(max-width: 991px)"
+            />
+            <img
+              class="about-img-fluid"
+              src="../assets/images/about-1.png"
+              alt="about 1"
+            />
+          </picture>
+        </div>
+        <div class="about-col">
+          <div
+            class="about-card-container d-flex flex-column justify-content-center justify-content-lg-start"
+          >
             <h4 class="fw-bold fs-lg-2 mb-5">Vivre</h4>
             <p class="text-neutral-400">
               vivre
@@ -72,22 +82,24 @@
         </div>
       </div>
 
-      <div class="d-lg-flex flex-lg-row-reverse mb-8 mb-lg-13">
-        <picture>
-          <source
-            srcset="../assets/images/about-2-sm.png"
-            media="(max-width: 991px)"
-          />
-          <img
-            class="banner mb-8"
-            src="../assets/images/about-2.png"
-            alt="about 2"
-          />
-        </picture>
-        <div
-          class="about-card-container d-flex justify-content-center justify-content-lg-start"
-        >
-          <div class="px-lg-12 about-card">
+      <div class="about-row d-flex flex-lg-row-reverse flex-wrap pt-lg-8">
+        <div class="about-col">
+          <picture>
+            <source
+              srcset="../assets/images/about-2-sm.png"
+              media="(max-width: 991px)"
+            />
+            <img
+              class="about-img-fluid"
+              src="../assets/images/about-2.png"
+              alt="about 2"
+            />
+          </picture>
+        </div>
+        <div class="about-col">
+          <div
+            class="about-card-container d-flex flex-column justify-content-center justify-content-lg-start pb-0"
+          >
             <h4 class="fw-bold fs-lg-2 mb-6 mb-lg-10">風格特色</h4>
             <p class="text-neutral-400 mb-6 mb-lg-10">
               vivre
@@ -107,9 +119,9 @@
       <div
         class="container d-lg-flex justify-content-lg-between py-12 py-lg-15"
       >
-        <h4 class="fs-lg-2 mb-8">大事記</h4>
-        <div>
-          <div class="event-card d-lg-flex align-items-lg-start">
+        <h4 class="fs-lg-2 mb-8 text-center">大事記</h4>
+        <ol class="list-unstyled">
+          <li class="event-card d-lg-flex align-items-lg-start">
             <span
               class="badge text-neutral-100 bg-primary-400 fs-6 fs-lg-4 p-5 rounded-0 me-14 mb-8"
               >2020</span
@@ -138,8 +150,8 @@
                 </tbody>
               </table>
             </div>
-          </div>
-          <div class="event-card d-lg-flex align-items-lg-start mt-15">
+          </li>
+          <li class="event-card d-lg-flex align-items-lg-start mt-15">
             <span
               class="badge text-neutral-100 bg-primary-400 fs-6 fs-lg-4 p-5 rounded-0 me-14 mb-8"
               >2021</span
@@ -179,8 +191,8 @@
                 </tbody>
               </table>
             </div>
-          </div>
-          <div class="event-card d-lg-flex align-items-lg-start mt-15">
+          </li>
+          <li class="event-card d-lg-flex align-items-lg-start mt-15">
             <span
               class="badge text-neutral-100 bg-primary-400 fs-6 fs-lg-4 p-5 rounded-0 me-14 mb-8"
               >2022</span
@@ -219,8 +231,8 @@
                 </tbody>
               </table>
             </div>
-          </div>
-          <div class="event-card d-lg-flex align-items-lg-start mt-15">
+          </li>
+          <li class="event-card d-lg-flex align-items-lg-start mt-15">
             <span
               class="badge text-neutral-100 bg-primary-400 fs-6 fs-lg-4 p-5 rounded-0 me-14 mb-8"
               >2023</span
@@ -269,8 +281,8 @@
                 </tbody>
               </table>
             </div>
-          </div>
-        </div>
+          </li>
+        </ol>
       </div>
     </section>
 

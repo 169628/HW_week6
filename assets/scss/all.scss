@@ -13,6 +13,9 @@
 
 //自定scss
 @import "./base/base";
+//自組元件
+@import "./components/btn";
+@import "./components/link";
 
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
